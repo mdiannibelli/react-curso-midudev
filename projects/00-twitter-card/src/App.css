@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.tw-follow-card-button {
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  border-color: none;
+  padding: 6px 16px;
+  font-weight: bold;
+  background-color: #fff;
+  color: black;
+  border: none;
+}
+
+
+.tw-follow-card-button.is-following:hover {
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  transition-duration: 500;
+}
+
+article button:hover {
+  transition-duration: 300;
+  background-color: #888;
+  border: none;
+  transition-duration: 500;
+}
+
+article img {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+article header span {
+  opacity: .6;
+}
+
+article header div {
+  display: flex;
+  flex-direction: column;
+}
+
+article header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: .8rem;
+  justify-content: space-between;
+}
