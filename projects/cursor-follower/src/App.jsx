@@ -6,6 +6,8 @@ function App() {
   const [enabled, setEnabled] = useState(false) 
   const [position, setPosition] = useState({x: 0, y:0})
 
+
+  //! Cursor Pointer
   useEffect(() => {
     // Este console.log se ejecuta 2 veces debido al React.StrictMode, ejecuta el useEffect, luego lo desmonta y luego lo vuelve a ejecutar
     console.log('useEffect')
@@ -26,6 +28,14 @@ function App() {
     }
   }, [enabled])
 
+  //! Oculta el cursor del mouse con una clase no-cursor de index.css
+  useEffect(() => {
+    document.body.classList.toggle('no-cursor', enabled)
+
+    return () => {
+      document.body.classList.remove('no-cursor')
+    }
+  }, [enabled])
   return (
     <>
       <div
